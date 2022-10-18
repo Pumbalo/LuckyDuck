@@ -13,4 +13,40 @@ html {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   background-color: #171717;
+  color: #fff;
 }
+
+/* Global CSS */
+.navigation-active {
+  color: #f39c12 !important;
+  border-bottom: 2px solid #f39c12;
+}
+
+/* End of Global CSS*/
+
+/* Navigation */
+#navigation {
+  width: 100%;
+  height: 100%;
+}
+
+.navigation-wrapper {
+  width: 100%;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  justify-content: space-evenly;
+  margin: 2rem 0 0 0;
+  padding: 0;
+}
+
+.navigation-item a {
+  color: #fff;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+/* End of Navigation */
