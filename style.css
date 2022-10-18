@@ -14,3 +14,40 @@ html {
   font-family: "Roboto", sans-serif;
   background-color: #171717;
 }
+
+#menu {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin: 75px;
+}
+
+.menuOptions {
+  color: white;
+  padding-inline: 1rem;
+  margin-block: -5px -5px;
+  margin-inline: -5px -5px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+
+.description {
+  margin-top: -15px;
+}
+
+.price {
+  font-weight: bolder;
+  font-size: 15px;
+  align-items: flex-end;
+}
+
+.allergy {
+  font-style: italic;
+  font-size: 12.5px;
+}
