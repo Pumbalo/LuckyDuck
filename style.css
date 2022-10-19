@@ -14,3 +14,69 @@ html {
   font-family: "Roboto", sans-serif;
   background-color: #171717;
 }
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > .footerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 50%;
+  height: 350px;
+  border-top: solid #F39C12 3px;
+}
+
+footer > .footerContainer > h1 {
+  color: #F39C12;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+footer > .footerContainer > p {
+  text-align: center;
+  color: grey;
+  width: 400px;
+  margin-bottom: 0;
+}
+
+footer > .footerContainer > .footerMenu {
+  display: flex;
+}
+
+footer > .footerContainer > .footerMenu > p {
+  margin: 50px 30px;
+}
+
+footer > .footerContainer > .footerSocials > img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 800px) {
+  footer > .footerContainer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  footer > .footerContainer > p {
+    width: 300px;
+  }
+}
+
+/* Footer ends */

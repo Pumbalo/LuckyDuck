@@ -5,7 +5,7 @@
             "allergyTypes":[""],
             "title": "Fläskfiléplanka",
             "description": "Fläskfilé med duchesse mos, rödvinssky, bearnaise och stekta grönsaker",
-            "price": 149.0 
+            "price": 149.0
 
         },
 
@@ -14,7 +14,7 @@
             "allergyTypes":["egg"],
             "title": "BiffRydberg",
             "description": "Tärnad oxfile med potatis och gullök, serveras med dijonsenapskräm och rå äggula",
-            "price": 175.0 
+            "price": 175.0
 
         },
 
@@ -32,9 +32,9 @@
             "allergyTypes":["lactose", "gluten"],
             "title": "Halloumiburgare",
             "description": "Sallad, tomat, rödlök och guacamole i briochebröd med pommes och aioli",
-            "price": 155.0 
+            "price": 155.0
 
-        }, 
+        },
 
         {
             "meatTypes":["fish"],
@@ -74,7 +74,7 @@
             "title": "KrämigKycklingpasta",
             "description": "Soltorkade tomater, basilika, grönsaker och parmesan",
             "price": 169.0
-        
+
         },
 
         {
@@ -83,7 +83,7 @@
             "title": "MusslorAlCava",
             "description": "Ångkokta musslor i en krämig sås gjord på cava, toppas med cream fraiche och jalapenios, serveras med pommes och aioli",
             "price": 109.0
-        
+
         },
 
         {
@@ -92,10 +92,8 @@
             "title": "GrilladOxfile",
             "description": "200g oxfilé, rödvinsås, frästa grönsaker serveras med potatisgratäng",
             "price": 259.0
-        
+
         }
-        
+
     ]
 }
-
-
