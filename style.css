@@ -4,6 +4,7 @@
 Text Primary: #ffffff;
 Text Secondary: #f39c12;
 Background Primary: #171717;
+Text Light Yellow: #FCC061;
 */
 
 body,
@@ -50,6 +51,121 @@ html {
 }
 
 /* End of Navigation */
+
+/* Hero */
+#hero {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: url("./images/hero-background.png");
+  background-position-x: 75%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.hero-logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-wrapper {
+  width: 100%;
+  height: 100%;
+  max-width: 700px;
+  padding: 0 4rem;
+}
+
+.hero-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.hero-title {
+  font-size: 3rem;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+}
+
+.hero-desc {
+  font-size: 1.2rem;
+  font-weight: 300;
+  inline-size: 450px;
+}
+
+.hero-content {
+  margin-left: 2rem;
+}
+
+.hero-icon-container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  place-content: center;
+  text-align: center;
+}
+
+.hero-icon-item {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.hero-icon-item img {
+  width: 64px;
+  height: 64px;
+}
+
+.hero-icon-title {
+  color: #fcc061;
+  font-size: 3rem;
+}
+
+.hero-icon-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.icon-list-primary {
+  font-size: 1.4rem;
+}
+.icon-list-secondary {
+  font-size: 1rem;
+  padding: 0.3rem 0 0.7rem 0;
+}
+
+.icon-list-link a,
+.icon-list-link {
+  text-decoration: none;
+  color: #ffffff;
+  padding-top: 0.7rem;
+}
+
+@media only screen and (max-width: 850px) {
+  #hero {
+    background: none;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-wrapper {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .hero-desc {
+    inline-size: auto;
+  }
+}
+
+/* End of Hero */
 
 /* Meny */
 #menu {
