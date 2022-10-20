@@ -9,13 +9,65 @@
   </head>
   <body>
     <!-- Navigation -->
-    <nav id="navigation"></nav>
+    <nav id="navigation">
+      <div class="navigation-wrapper">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-active" href="#navigation">Hem</a>
+          </li>
+          <li class="navigation-item"><a href="#menu">Meny</a></li>
+          <li class="navigation-item"><a href="#footer">Kontakt</a></li>
+        </ul>
+      </div>
+    </nav>
     <!-- End of Navigation -->
     <!-- Hero -->
     <section id="hero"></section>
     <!-- End of Hero-->
     <!-- Menu -->
-    <section id="menu"></section>
+    <section id="menu">
+      <div class="inputContainer">
+        <div class="selectContainer">
+          <label>Allergier</label>
+          <div class="checkboxStyle">
+            <input type="checkbox" name="lactose">Laktos
+          </div>
+          <div class="checkboxStyle">
+            <input type="checkbox" name="gluten">Gluten
+          </div>
+          <div class="checkboxStyle">
+            <input type="checkbox" name="nuts">Nötter
+          </div>
+          <div class="checkboxStyle">
+            <input type="checkbox" name="sesam">Sesam
+          </div>
+          <!-- <select name="Allergies">
+            <option value="Laktosfritt">Laktosfritt</option>
+            <option value="Glutenfritt">Glutenfritt</option>
+            <option value="Notter">Nötter</option>
+            <option value="Sesamfrön">Sesamfrön</option>
+          </select> -->
+        </div>
+
+        <div class="selectContainer">
+          <label>Kött/Veganskt</label>
+          <select name="MeatVegan">
+            <option value="Meat">Kött</option>
+            <option value="Kyckling">Kyckling</option>
+            <option value="Fisk">Fisk</option>
+            <option value="Vegetariskt">Vegetariskt</option>
+          </select>
+        </div>
+
+        <div class="selectContainer">
+          <label>Pris</label>
+          <select name="MeatVegan">
+            <option value="PrisStigande">Pris Stigande</option>
+            <option value="PrisFallande">Pris Fallande</option>
+          </select>
+        </div>
+      </div>
+    </section>
     <!-- End of Menu -->
     <!-- Footer -->
     <footer id="footer">
