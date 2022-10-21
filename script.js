@@ -2,9 +2,11 @@
 let meny = document.getElementById("menu");
 let checkboxes = document.querySelectorAll("#check");
 let price = document.querySelectorAll("#price");
+let meatType = document.querySelectorAll("#meatType");
 
 let sorting = "";
 
+// Hämtar input från radioknapp och sortera allergier
 for (var i = 0, max = checkboxes.length; i < max; i++) {
   checkboxes[i].onclick = (e) => {
     meny.innerHTML = "";
@@ -12,10 +14,19 @@ for (var i = 0, max = checkboxes.length; i < max; i++) {
   };
 }
 
+// Hämtar input från radioknapp och sorterar efter pris
 for (var i = 0; i < 2; i++) {
   price[i].onclick = (e) => {
     sorting = e.target.value;
     CheckData(sorting);
+  };
+}
+
+//Hämtar input från radioknapp och sorterar efter protein
+for (var i = 0, max = meatType.length; i < max; i++) {
+  meatType[i].onclick = (e) => {
+    meny.innerHTML = "";
+    CheckData(e.target.value);
   };
 }
 
@@ -33,11 +44,11 @@ function CheckData(typeFood) {
           meny.innerHTML = "";
           return b.price - a.price;
         }
-        return;
       });
 
       menu.forEach((item) => {
         if (item["allergyTypes"] === typeFood) return;
+        else if (item["meatTypes"] === typeFood) return;
         WriteData(item);
       });
     })
