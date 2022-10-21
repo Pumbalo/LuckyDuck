@@ -11,7 +11,7 @@
     {
       "meatTypes": ["meat"],
       "allergyTypes": ["Ägg"],
-      "title": "BiffRydberg",
+      "title": "Biff Rydberg",
       "description": "Tärnad oxfile med potatis och gullök, serveras med dijonsenapskräm och rå äggula",
       "price": 175.0
     },
@@ -19,7 +19,7 @@
     {
       "meatTypes": ["meat"],
       "allergyTypes": ["Laktos", " Gluten"],
-      "title": "SpicyCheesburger",
+      "title": "Spicy Cheesburger",
       "description": "180g högrevsburgare med sallad, tomat, picklad rödlök, cheddarost med jalapenos och barbecusås i briochebröd med pommes och rökig ranch-aioli",
       "price": 155.0
     },
@@ -35,7 +35,7 @@
     {
       "meatTypes": ["fish"],
       "allergyTypes": ["Laktos"],
-      "title": "FishnChips",
+      "title": "Fish´n Chips",
       "description": "Beer-batter penerad torskrygg med dill-aioli, halstrad citron och pommes",
       "price": 149.0
     },
@@ -43,7 +43,7 @@
     {
       "meatTypes": ["meat"],
       "allergyTypes": [],
-      "title": "HusetsSchnitzel",
+      "title": "Husets Schnitzel",
       "description": "200g välbakad schnitzel med citron, kapris, anjovis, kryddsmör och rödvinssky serveras med stekt potatis",
       "price": 175.0
     },
@@ -51,7 +51,7 @@
     {
       "meatTypes": ["chicken", "bacon"],
       "allergyTypes": [],
-      "title": "CesarsalladHalv",
+      "title": "Cesarsallad Halv",
       "description": "Varm kyckling, bacon, krutonger, parmesan samt caesardressing",
       "price":[85.0, 139.0]
     },
@@ -59,7 +59,7 @@
     {
       "meatTypes": ["fish"],
       "allergyTypes": [],
-      "title": "LaxsalladMedQuinoa",
+      "title": "Laxsallad Med Quinoa",
       "description": "Grillad lax med quinoa, cocktailtomater, blandsallad, morot julienne, rödlök med en vinägrett",
       "price": 159.0
     },
@@ -67,7 +67,7 @@
     {
       "meatTypes": ["chicken"],
       "allergyTypes": [],
-      "title": "KrämigKycklingpasta",
+      "title": "Krämig Kycklingpasta",
       "description": "Soltorkade tomater, basilika, grönsaker och parmesan",
       "price": 169.0
     },
@@ -75,7 +75,7 @@
     {
       "meatTypes": ["seafood"],
       "allergyTypes": ["Laktos"],
-      "title": "MusslorAlCava",
+      "title": "Musslor Al Cava",
       "description": "Ångkokta musslor i en krämig sås gjord på cava, toppas med cream fraiche och jalapenios, serveras med pommes och aioli",
       "price": [109.0, 189.0]
     },
@@ -83,7 +83,7 @@
     {
       "meatTypes": ["meat"],
       "allergyTypes": [],
-      "title": "GrilladOxfile",
+      "title": "Grillad Oxfile",
       "description": "200g oxfilé, rödvinsås, frästa grönsaker serveras med potatisgratäng",
       "price": 259.0
     }
