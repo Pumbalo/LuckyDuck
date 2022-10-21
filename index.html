@@ -8,88 +8,129 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <!-- Navigation -->
-    <nav id="navigation">
-      <!-- Det var inte jag som skrev koden //Andreas -->
-      <div class="navigation-wrapper">
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-active" href="#navigation">Hem</a>
-          </li>
-          <li class="navigation-item"><a href="#menu">Meny</a></li>
-          <li class="navigation-item"><a href="#footer">Kontakt</a></li>
-        </ul>
-      </div>
-    </nav>
-    <!-- End of Navigation -->
-    <!-- Hero -->
-    <section id="hero"></section>
-    <!-- End of Hero-->
-    <!-- Menu -->
-    <section id="menu">
-      <div class="inputContainer">
-        <div class="selectContainer">
-          <div>
-            <h1>Allergier</h1>
-            <div class="checkboxStyle">
-              <input type="radio" name="lactose" class="distanceBetweenText">Laktos
-            </div>
-            <div class="checkboxStyle">
-              <input type="radio" name="gluten" class="distanceBetweenText">Gluten
+    <div class="wrapper">
+      <!-- Navigation -->
+      <nav id="navigation">
+        <div class="navigation-wrapper">
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-active" href="#navigation">Hem</a>
+            </li>
+            <li class="navigation-item"><a href="#menu">Meny</a></li>
+            <li class="navigation-item"><a href="#footer">Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- End of Navigation -->
+      <!-- Hero -->
+      <section id="hero">
+        <div class="hero-wrapper">
+          <div class="hero-container">
+            <img
+              class="hero-logo"
+              src="./images/logo.png"
+              alt="Lucky Duck Logo" />
+            <div class="hero-content">
+              <h1 class="hero-title">Välkommnande titel</h1>
+              <p class="hero-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius
+                cursus id non nulla odio in pretium netus cursus. Nulla erat
+                magna viverra aliquam, quis nulla auctor. Metus quis vel id
+                integer gravida tempor fermentum pellentesque facilisis. Ut
+                aliquam eget mattis.
+              </p>
             </div>
           </div>
         </div>
-
-        <div class="selectContainer">
-          <div>
-            <h1>Kött/Veganskt</h1>
-            <div class="checkboxStyle">
-              <input type="radio" name="meat" class="distanceBetweenText">Kött
-            </div>
-            <div class="checkboxStyle">
-              <input type="radio" name="chicken" class="distanceBetweenText">Kyckling
-            </div>
-            <div class="checkboxStyle">
-              <input type="radio" name="fish" class="distanceBetweenText">Fisk
-            </div>
-            <div class="checkboxStyle">
-              <input type="radio" name="vegan" class="distanceBetweenText">Vegetariskt
-            </div>
+      </section>
+      <section id="icons">
+        <div class="hero-icon-container">
+          <div class="hero-icon-item">
+            <img src="./images/icons/opening-icon.svg" alt="Öppetider Ikon" />
+            <h2 class="hero-icon-title">Öppetider</h2>
+            <ul class="hero-icon-list">
+              <li class="icon-list-primary">Mån-Tors</li>
+              <li class="icon-list-secondary">10:00-22:00</li>
+              <li class="icon-list-primary">Fre-Lör</li>
+              <li class="icon-list-secondary">10:00-24:00</li>
+              <li class="icon-list-primary">Söndag</li>
+              <li class="icon-list-secondary">Stängt</li>
+            </ul>
+          </div>
+          <div class="hero-icon-item">
+            <img src="./images/icons/lunch-icon.svg" alt="Lunch Ikon" />
+            <h2 class="hero-icon-title">Lunch</h2>
+            <ul class="hero-icon-list">
+              <li class="icon-list-primary">Mån-Lör</li>
+              <li class="icon-list-secondary">11:00-13:00</li>
+            </ul>
+          </div>
+          <div class="hero-icon-item">
+            <img src="./images/icons/contact-icon.svg" alt="Kontakt Ikon" />
+            <h2 class="hero-icon-title">Kontakt</h2>
+            <ul class="hero-icon-list">
+              <li class="icon-list-primary">036 12 65 45</li>
+              <li class="icon-list-secondary">info@luckyduck.se</li>
+            </ul>
+          </div>
+          <div class="hero-icon-item">
+            <img src="./images/icons/adress-icon.svg" alt="Adress Ikon" />
+            <h2 class="hero-icon-title">Adress</h2>
+            <ul class="hero-icon-list">
+              <li class="icon-list-primary">Randomadress 14</li>
+              <li class="icon-list-link">
+                <a href="#">Klicka här för vägbeskrivning</a>
+              </li>
+            </ul>
           </div>
         </div>
-
-        <div class="selectContainer">
-          <div>
-            <h1>Pris</h1>
-            <div class="checkboxStyle">
-              <input type="radio" name="priceIncreasement" class="distanceBetweenText">Pris Stigande
-            </div>
-            <div class="checkboxStyle">
-              <input type="radio" name="priceDecreasement" class="distanceBetweenText">Pris Fallande
-            </div>
+      </section>
+      <!-- End of Hero-->
+      <!-- Menu -->
+      <div>
+        <!-- Allergy Type -->
+        <input type="radio" value="lactose" name="allergy" id="check" />
+        <label>Lactose</label>
+        <input type="radio" value="gluten" name="allergy" id="check" />
+        <label>Gluten</label>
+        <input type="radio" value="egg" name="allergy" id="check" />
+        <label>Egg</label>
+        <!-- Meat Type -->
+        <input type="radio" value="meat" name="meatType" id="meatType" />
+        <label>Meat</label>
+        <input type="radio" value="chicken" name="meatType" id="meatType" />
+        <label>Chicken</label>
+        <input type="radio" value="seafood" name="meatType" id="meatType" />
+        <label>Seafood</label>
+        <input type="radio" value="vegetarian" name="meatType" id="meatType" />
+        <label>Vegetarian</label>
+        <!-- Price -->
+        <input type="radio" value="increase" name="price" id="price" />
+        <label>Pris Stigande</label>
+        <input type="radio" value="decrease" name="price" id="price" />
+        <label>Pris Fallande</label>
+      </div>
+      <section id="menu"></section>
+      <!-- End of Menu -->
+      <!-- Footer -->
+      <footer id="footer">
+        <div class="footerContainer">
+          <h1>Lucky Duck</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+          <div class="footerMenu">
+            <p><a href="#">Hem</a></p>
+            <p><a href="#">Meny</a></p>
+            <p><a href="#">Kontakt</a></p>
+          </div>
+          <div class="footerSocials">
+            <img src="img/facebook transparent.png" alt="Facebook">
+            <img src="img/twitter transparent.png" alt="Twitter">
+            <img src="img/instagram transparent.png" alt="Instagram">
           </div>
         </div>
-      </div>
-    </section>
-    <!-- End of Menu -->
-    <!-- Footer -->
-    <footer id="footer">
-      <div class="footerContainer">
-        <h1>Lucky Duck</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-        <div class="footerMenu">
-          <p><a href="#">Hem</a></p>
-          <p><a href="#">Meny</a></p>
-          <p><a href="#">Kontakt</a></p>
-        </div>
-        <div class="footerSocials">
-          <img src="img/facebook transparent.png" alt="Facebook">
-          <img src="img/twitter transparent.png" alt="Twitter">
-          <img src="img/instagram transparent.png" alt="Instagram">
-        </div>
-      </div>
-    </footer>
+      </footer>
     <!-- End of Footer -->
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>
