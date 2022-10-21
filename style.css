@@ -23,6 +23,12 @@ html {
   border-bottom: 2px solid #f39c12;
 }
 
+.wrapper {
+  max-width: 1640px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
 /* End of Global CSS*/
 
 /* Navigation */
@@ -148,6 +154,7 @@ html {
 @media only screen and (max-width: 850px) {
   #hero {
     background: none;
+    height: 80vh;
   }
 
   .hero-container {
