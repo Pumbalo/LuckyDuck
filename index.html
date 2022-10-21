@@ -10,6 +10,7 @@
   <body>
     <!-- Navigation -->
     <nav id="navigation">
+      <!-- Det var inte jag som skrev koden //Andreas -->
       <div class="navigation-wrapper">
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -28,43 +29,45 @@
     <section id="menu">
       <div class="inputContainer">
         <div class="selectContainer">
-          <label>Allergier</label>
-          <div class="checkboxStyle">
-            <input type="checkbox" name="lactose">Laktos
+          <div>
+            <h1>Allergier</h1>
+            <div class="checkboxStyle">
+              <input type="radio" name="lactose" class="distanceBetweenText">Laktos
+            </div>
+            <div class="checkboxStyle">
+              <input type="radio" name="gluten" class="distanceBetweenText">Gluten
+            </div>
           </div>
-          <div class="checkboxStyle">
-            <input type="checkbox" name="gluten">Gluten
-          </div>
-          <div class="checkboxStyle">
-            <input type="checkbox" name="nuts">Nötter
-          </div>
-          <div class="checkboxStyle">
-            <input type="checkbox" name="sesam">Sesam
-          </div>
-          <!-- <select name="Allergies">
-            <option value="Laktosfritt">Laktosfritt</option>
-            <option value="Glutenfritt">Glutenfritt</option>
-            <option value="Notter">Nötter</option>
-            <option value="Sesamfrön">Sesamfrön</option>
-          </select> -->
         </div>
 
         <div class="selectContainer">
-          <label>Kött/Veganskt</label>
-          <select name="MeatVegan">
-            <option value="Meat">Kött</option>
-            <option value="Kyckling">Kyckling</option>
-            <option value="Fisk">Fisk</option>
-            <option value="Vegetariskt">Vegetariskt</option>
-          </select>
+          <div>
+            <h1>Kött/Veganskt</h1>
+            <div class="checkboxStyle">
+              <input type="radio" name="meat" class="distanceBetweenText">Kött
+            </div>
+            <div class="checkboxStyle">
+              <input type="radio" name="chicken" class="distanceBetweenText">Kyckling
+            </div>
+            <div class="checkboxStyle">
+              <input type="radio" name="fish" class="distanceBetweenText">Fisk
+            </div>
+            <div class="checkboxStyle">
+              <input type="radio" name="vegan" class="distanceBetweenText">Vegetariskt
+            </div>
+          </div>
         </div>
 
         <div class="selectContainer">
-          <label>Pris</label>
-          <select name="MeatVegan">
-            <option value="PrisStigande">Pris Stigande</option>
-            <option value="PrisFallande">Pris Fallande</option>
-          </select>
+          <div>
+            <h1>Pris</h1>
+            <div class="checkboxStyle">
+              <input type="radio" name="priceIncreasement" class="distanceBetweenText">Pris Stigande
+            </div>
+            <div class="checkboxStyle">
+              <input type="radio" name="priceDecreasement" class="distanceBetweenText">Pris Fallande
+            </div>
+          </div>
         </div>
       </div>
     </section>

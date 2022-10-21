@@ -28,22 +28,61 @@ html {
   display: flex;
   flex-direction: column;
   margin: 30px 50px;
+  height: 69px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  transition: 0.2s;
 }
 
-.inputContainer > .selectContainer:after {
-  padding: 10px;
+.inputContainer > .selectContainer:hover {
+  height: 261px;
+  overflow-y: visible;
+  transition: 0.3s;
 }
 
-.inputContainer > .selectContainer > select {
-  width: 285px;
-  height: 48px;
-  border-radius: 8px;
+.inputContainer > .selectContainer > div {
+  background: white;
   color: #54595E;
-  padding: 16px 16px 16px 24px;
+  overflow: hidden;
+}
+
+.inputContainer > .selectContainer > div > h1 {
+  display: flex;
+  justify-content: center;
+  user-select: none;
+  margin: 20px 0;
 }
 
 .checkboxStyle {
   display: flex;
+  align-items: center;
+  color: #54595E;
+  background: #ffffff;
+  padding: 10px 0;
+  width: 285px;
+  height: 28px;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.checkboxStyle:hover {
+  transition: 0.2s;
+  background: #f0f0f0;
+}
+
+.inputContainer > .selectContainer > div > .checkboxStyle > input:checked ~ .checkmark {
+  background: orange;
+}
+
+.checkboxStyle .distanceBetweenText {
+  margin: 0 10px 0 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1170px) {
+  .inputContainer {
+    flex-wrap: wrap;
+  }
 }
 
 /* End of menu */
